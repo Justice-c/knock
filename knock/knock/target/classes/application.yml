@@ -1,0 +1,21 @@
+server:
+  port: 8952
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: jus123...
+    url: jdbc:mysql://localhost:3306/knockdb?useSSL=false
+    username: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+
